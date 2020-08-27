@@ -1,6 +1,9 @@
 @import "colors";
 
+
 $preto: #999;
+$font-primary: monospace;
+
 div{
     background: $preto;
     height: 200px;
@@ -8,5 +11,6 @@ div{
     a {
         color: pink;
         background: blue;
+        font-family: $font-primary;
     }
 }
