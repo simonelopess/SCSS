@@ -12,4 +12,26 @@ div {
 div a {
   color: pink;
   background: blue;
+  font-family: monospace;
+}
+
+ul {
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  background: blue;
+  color: white;
+}
+
+ul li a:hover {
+  background: pink;
 }
