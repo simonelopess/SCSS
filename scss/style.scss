@@ -1,19 +1,77 @@
 @import "colors";
 
+//mixin
+@mixin title-large{
+    font-size: 4em;
+    font-weight: bold;
+    font-family: monospace;
+    line-height: 1;
+}
+
+@mixin border-box{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+//exemplo de mixin com parametros
+
+@mixin separador($color: blue, $largura: 100px){
+    &::after{
+        content: '';
+        display: block;
+        width: 100px;
+        height: 4px;
+        background: $color;
+    }
+}
+
+@mixin box-shadow($shadow...){
+    box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+}
+
+
+//mixin content mobile exemplo
+
+@mixin mobile{
+    @media (max-width: 600px){
+        @content;
+    }
+}
+
+
+
 
 $preto: #999;
 $font-primary: monospace;
+$cor-primary: blue;
 
+h1{
+    color: $cor-primary;
+    @include title-large;
+    @include separador(#84E, 200px);
+    @include box-shadow(10px 10px 0 0 rgba(0,0,0,.5),
+                        15px 15px 0 0  rgba(0,0,0,.5),
+                       20px 10px 0 0 rgba(0,0,0,.5));
+
+    @include mobile{
+        color:pink;
+    }
+}
 div{
     background: $preto;
     height: 200px;
     width: 200px;
+    @include border-box;
     a {
         color: pink;
         background: blue;
         font-family: $font-primary;
     }
 }
+
 
 ul {
     text-align: center;
