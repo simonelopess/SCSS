@@ -1,6 +1,44 @@
 p {
+  font-size: 20px;
+  padding: 20px;
+}
+
+p {
+  color: blue;
+  background: orange;
+}
+
+p {
   color: blue;
   background: gray;
+}
+
+a {
+  color: white;
+  background: #8844EE;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #c4a2f7;
+}
+
+div {
+  box-shadow: 5px 5px 5px 0 #000;
+}
+
+div.active {
+  box-shadow: 25px 25px 25px 0 #666;
+}
+
+div {
+  font-size: 1.5em;
+}
+
+@media (max-width: 600px) {
+  div {
+    font-size: 1.2em;
+  }
 }
 
 h1 {

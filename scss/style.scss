@@ -24,6 +24,7 @@ p{
 }
 
 @import "colors";
+@import "funcoes";
 
 //mixin
 @mixin title-large{
@@ -102,6 +103,33 @@ div {
 div.active {
     @include shadow(3);
 }
+
+
+@mixin d($device){
+    @if $device ==m{
+        @media (max-width:300px){
+            @content;
+        }
+    }
+    @else if $device == t {
+        @media (max-width: 600px){
+            @content;
+        }
+    }
+    @else if $device == s {
+        @media (max-width:900px){
+            @content;
+        }
+    }
+}
+
+div {
+    font-size: 1.5em;
+    @include d(t){
+        font-size: 1.2em;
+    }
+}
+
 
 
 $preto: #999;
