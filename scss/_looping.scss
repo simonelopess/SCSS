@@ -3,3 +3,15 @@
     width: 100px * $i;
   }
 }
+
+$container: 960;
+$gutter:20;
+$colunas: 12;
+
+
+@for $j from 1 through $colunas{
+  $width: $container / $colunas * $i - $gutter; 
+   .grid-#{$i}{
+     width: $width + px ;
+   }
+}
