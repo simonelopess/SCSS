@@ -4,6 +4,25 @@ p{
     padding: 20px;
 }
 
+//Condicionais
+
+$tema: oceano;
+$primary-color: black;
+$secondary-color: gray;
+
+@if $tema == oceano{
+    $primary-color: blue;
+    $secondary-color: orange;
+} @else if $tema == deserto{
+    $primary-color: yellow;
+    $secondary-color: purple
+}
+
+p{
+    color: $primary-color;
+    background: $secondary-color;
+}
+
 @import "colors";
 
 //mixin
@@ -47,7 +66,42 @@ p{
     }
 }
 
+@mixin type-1($size){
+    font-family: monospace;
+    @if $size == normal {
+        font-size: 1em;
+    }
+    @else if $size ==large{
+        font-size: 1.125em;
+    }
+    @else if $size == x-large {
+        font-size: 1.5em;
+    }
 
+    p {
+        @include type-1(16);
+    }
+
+}
+
+@mixin shadow($type){
+    @if $type == 1 {
+        box-shadow: 5px 5px 5px 0 #000;
+    }
+    @else if $type == 2 {
+        box-shadow: 15px 15px 15px 0 #333;
+    }
+    @else if $type == 3 {
+        box-shadow: 25px 25px 25px 0 #666;
+    }
+}
+
+div {
+    @include shadow(1);
+}
+div.active {
+    @include shadow(3);
+}
 
 
 $preto: #999;
