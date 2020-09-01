@@ -36,7 +36,7 @@
 }
 
 .produto_info p{
-	@include type-1(14);
+	@include tipo-1(14);
 	height: 122px;
 	padding: 20px 30px;
 }
@@ -87,7 +87,7 @@
 /*Introducao*/
 
 .introducao h1 {
-	@include type-1(36);
+	@include tipo-1(36);
 }
 
 .introducao {
@@ -116,12 +116,12 @@
 /*Sobre*/
 
 .missao_sobre p {
-	@include type-1(14);
+	@include tipo-1(14);
 	padding-right: 0px;
 }
 
 .missao_sobre ul li {
-	@include type-1(14);
+	@include tipo-1(14);
 }
 
 /*Produtos*/
@@ -136,7 +136,7 @@
 }
 
 .produto_info p{
-	@include type-1(14);
+	@include tipo-1(14);
 	height: auto;
 	padding: 20px 30px;
 }
@@ -144,7 +144,7 @@
 .produto_info ul li {
 	width: 149px;
 	height: 49px;
-	@include type-1(14);
+	@include tipo-1(14);
 	padding-top: 14px;
 }
 

@@ -432,22 +432,6 @@ th {
   box-sizing: border-box;
 }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0px;
-  position: relative;
-}
-
-.container:after, .container:before {
-  content: " ";
-  display: table;
-}
-
-.container:after {
-  clear: both;
-}
-
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
   float: left;
   margin-left: 10px;
@@ -522,10 +506,23 @@ th {
   width: 300px;
 }
 
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+}
+
+.container:after, .container:before {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .container {
-    width: 768px;
-  }
   .grid-1 {
     width: 28px;
   }
@@ -576,6 +573,9 @@ th {
   }
   .grid-1-3 {
     width: 236px;
+  }
+  .container {
+    width: 768px;
   }
 }
 
@@ -768,6 +768,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  line-height: 20px;
   letter-spacing: .1em;
 }
 
@@ -1116,7 +1117,7 @@ img {
   background: #fec63e;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 25px;
   font-weight: bold;
   float: left;
   width: 229px;
@@ -1260,6 +1261,7 @@ img {
 
 .quote_clientes cite {
   font-size: 18px;
+  line-height: 25px;
   font-weight: bold;
   float: right;
   font-style: normal;
@@ -1392,8 +1394,6 @@ img {
 .contato_dados span {
   display: block;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
-  line-height: 25px;
 }
 
 .contato_dados span:nth-of-type(even) {
@@ -1521,7 +1521,7 @@ img {
   }
   .missao_sobre ul li {
     font-size: 14px;
-    line-height: 25px;
+    line-height: 20px;
   }
   /*Produtos*/
   .produto_item h2 {

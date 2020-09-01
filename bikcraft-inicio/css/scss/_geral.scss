@@ -18,7 +18,7 @@ img {
 }
 
 #form-erro span, #form-send span  {
-	@include type-1(18);
+	@include tipo-1(18);
 	margin-bottom: 10px;
 	display: block;
 }
@@ -36,7 +36,7 @@ img {
 	border: 3px solid $primary-color;
 	padding: 10px 30px;
 	color: $primary-color;
-	@include type-1(14);
+	@include tipo-1(14);
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: .1em;
@@ -54,7 +54,7 @@ img {
 }
 
 .subtitulo {
-	@include type-1(24);
+	@include tipo-1(24);
 	font-weight: bold;
 	letter-spacing: .1em;
 	color: $secundary-color;
@@ -73,7 +73,7 @@ img {
 }
 
 .subtitulo-interno {
-	@include type-1(24);
+	@include tipo-1(24);
 	font-weight: bold;
 	letter-spacing: .1em;
 	color: $secundary-color;
@@ -116,7 +116,7 @@ img {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	@include type-1(14);
+	@include tipo-1(14);
 	padding: 10px 0;
 	transition: all .3s ease;
 }
@@ -142,7 +142,7 @@ img {
 }
 
 .introducao h1 {
-	@include type-1(48);
+	@include tipo-1(48);
 	color:$third-color;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -171,7 +171,7 @@ img {
 .quote-externo cite {
 	font-style: normal;
 	font-weight: bold;
-	@include type-1(14);
+	@include tipo-1(14);
 	letter-spacing: .1em;
 }
 
@@ -187,7 +187,7 @@ img {
 }
 
 .introducao-interna h1 {
-	@include type-1(36);
+	@include tipo-1(36);
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -219,7 +219,7 @@ img {
 
 .produtos_lista li h3{
 	font-weight: bold;
-	@include type-1(18);
+	@include tipo-1(18);
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-top: 20px;
@@ -311,7 +311,7 @@ img {
 
 .qualidade_lista li h3{
 	font-weight: bold;
-	@include type-1(18);
+	@include tipo-1(18);
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-top: 20px;
@@ -351,7 +351,7 @@ img {
 }
 
 .footer h3 {
-	@include type-1(18);
+	@include tipo-1(18);
 	color: $primary-color;
 	text-transform: uppercase;
 	letter-spacing: .1em;

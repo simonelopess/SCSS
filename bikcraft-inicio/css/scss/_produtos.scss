@@ -9,7 +9,7 @@
 
 .produto_item h2{
 	color: $third-color;
-	@include type-1(36);
+	@include tipo-1(36);
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	font-weight: bold;
@@ -43,7 +43,7 @@
 
 .produto_info p{
 	color: $third-color;
-	@include type-1(18);
+	@include tipo-1(18);
 	height: 180px;
 	padding: 30px 40px;
 }
@@ -52,7 +52,7 @@
 .produto_info ul li {
 	background: $primary-color;
 	text-transform: uppercase;
-	@include type-1(18);
+	@include tipo-1(18);
 	font-weight: bold;
 	float: left;
 	width: 229px;
@@ -132,7 +132,7 @@
 }
 
 .orcamento_dados h3{
-	@include type-1(18);
+	@include tipo-1(18);
 	text-transform: uppercase;
 	color: $primary-color;
 	font-weight: bold;
